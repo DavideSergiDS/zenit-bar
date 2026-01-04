@@ -36,7 +36,7 @@ export default function App() {
   const data = menuData[lang];
 
   return (
-    <div className="p-[100px] bg-[#01050b] text-white">
+    <div className="p-[10px] bg-[#01050b] text-white">
       
       <header className="flex justify-end mb-6 gap-2">
         {(["it", "en"] as const).map(l => (
