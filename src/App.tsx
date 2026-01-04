@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MenuCategory } from "./types";
 import { menuData } from "./menuData";
+import { Analytics } from '@vercel/analytics/react'
 
 function Section({ category }: { category: MenuCategory }) {
   return (
@@ -36,6 +37,7 @@ export default function App() {
 
   return (
     <div className="p-[100px] bg-[#01050b] text-white">
+      
       <header className="flex justify-end mb-6 gap-2">
         {(["it", "en"] as const).map(l => (
           <button
@@ -50,6 +52,7 @@ export default function App() {
       <div className="w-full justify-items-center"><img src="/images/copertina.png" width={600}/></div>
       <Section category={data.food} />
       <Section category={data.drinks} />
+      <Analytics />
     </div>
   );
 }
