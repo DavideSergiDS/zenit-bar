@@ -19,7 +19,7 @@ function Section({ category }: { category: MenuCategory }) {
               <div key={j} className="flex justify-between border-b py-2">
                 <div>
                   <p className="font-medium">{item.name}</p>
-                  <p className="text-sm text-gray-600">{item.description}</p>
+                  <p className="text-sm text-gray-400">{item.description}</p>
                 </div>
                 <p className="font-medium">{item.price}</p>
               </div>
