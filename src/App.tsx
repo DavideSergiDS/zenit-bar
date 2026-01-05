@@ -50,8 +50,9 @@ export default function App() {
         ))}
       </header>
       <div className="w-full justify-items-center"><img src="/images/copertina.png" width={600}/></div>
-      <Section category={data.food} />
+      <Section category={data.bar} />
       <Section category={data.drinks} />
+      <Section category={data.food} />
       <Analytics />
     </div>
   );

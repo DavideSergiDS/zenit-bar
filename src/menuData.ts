@@ -198,6 +198,27 @@ export const menuData: MenuData = {
         title: "Cucina",
         sections: [
           {
+            title: "Aperitivi - sotto il sole delle XIX",
+            image: null,
+            items: [
+              { name: "Free-Trittico (mix di frittini)", description: "", price: "€10.00" },
+              { name: "Pittule (classica, pizzaiola)", description: "", price: "€4.00" },
+              { name: "Crocchette di patate", description: "", price: "€4.50" },
+              { name: "Polpette di melanzane", description: "", price: "€5.00" },
+              { name: "Bocconcini di pollo", description: "", price: "€5.00" },
+              { name: "Anelli di cipolla", description: "", price: "€5.00" },
+              { name: "Patatira", description: "Mix di patate", price: "€7.00" },
+              { name: "Patatine fritte", description: "", price: "€4.00" },
+              { name: "Patatine Cacio e Pepe", description: "", price: "€6.00" },
+              { name: "Tagliere Zenit", description: "Mix di salumi e formaggi", price: "€12.00" },
+              { name: "Aperitivo Zenit", description: "Mix di salumi, formaggi e rosticceria", price: "€20.00" },
+              { name: "Tris Zenit", description: "Mix di salumi e formaggi", price: "€1.00" },
+              { name: "Rosticceria", description: "", price: "€2.00 / 4.00" },
+
+              
+            ]
+          },
+          {
             title: "Pinsa",
             image: null,
             items: [
@@ -426,6 +447,25 @@ export const menuData: MenuData = {
       food: {
         title: "Kitchen",
         sections: [
+          {
+            title: "Aperitifs – Under the Sun of XIX",
+            image: null,
+            items: [
+              { name: "Free Trittico (Mixed Fried Bites)", description: "", price: "€10.00" },
+              { name: "Pittule (Classic, Pizzaiola)", description: "Traditional fried dough balls", price: "€4.00" },
+              { name: "Potato Croquettes", description: "", price: "€4.50" },
+              { name: "Eggplant Meatballs", description: "", price: "€5.00" },
+              { name: "Chicken Bites", description: "", price: "€5.00" },
+              { name: "Onion Rings", description: "", price: "€5.00" },
+              { name: "Patatira", description: "Mixed potatoes", price: "€7.00" },
+              { name: "French Fries", description: "", price: "€4.00" },
+              { name: "Cacio e Pepe Fries", description: "Cheese & black pepper", price: "€6.00" },
+              { name: "Zenit Platter", description: "Selection of cured meats and cheeses", price: "€12.00" },
+              { name: "Zenit Aperitif", description: "Selection of cured meats, cheeses and fried snacks", price: "€20.00" },
+              { name: "Zenit Trio", description: "Selection of cured meats and cheeses", price: "€1.00" },
+              { name: "Savory Snacks", description: "", price: "€2.00 / 4.00" }
+            ]
+          },          
           {
             title: "Pinsa",
             image: null,
