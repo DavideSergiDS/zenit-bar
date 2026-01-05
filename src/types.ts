@@ -23,6 +23,7 @@ export interface MenuCategory {
 }
 
 export type MenuData = Record<string, {
-  food: MenuCategory;
+  bar: MenuCategory;
   drinks: MenuCategory;
+  food: MenuCategory;
 }>;
