@@ -219,6 +219,29 @@ export const menuData: MenuData = {
             ]
           },
           {
+            title: "Le nostre Pizze",
+            image: null,
+            items: [
+              { name: "Margherita", description: "Mozzarella fior di latte, salsa di pomodoro", price: "€5.50" },
+              { name: "Chips", description: "Salsa di pomodoro, mozzarella fior di latte, patatine fritte", price: "€6.00" },
+              { name: "Napoli", description: "Salsa di pomodoro, mozzarella fior di latte, capperi, acciughe", price: "€6.50" },
+              { name: "Americana", description: "Salsa di pomodoro, mozzarella fior di latte, patatine fritte, würstel", price: "€6.50" },
+              { name: "Diavola", description: "Salsa di pomodoro, mozzarella fior di latte, salame piccante", price: "€7.00" },
+              { name: "Tonno e Cipolla", description: "Salsa di pomodoro, mozzarella fior di latte, tonno, cipolla", price: "€7.00" },
+              { name: "Fumé", description: "Salsa di pomodoro, mozzarella fior di latte, scamorza affumicata, pancetta", price: "€7.00" },
+              { name: "Cotto e Funghi", description: "Salsa di pomodoro, mozzarella fior di latte, prosciutto cotto, funghi", price: "€7.00" },
+              { name: "Bufala", description: "Salsa di pomodoro, mozzarella di bufala, basilico", price: "€7.50" },
+              { name: "Contadina", description: "Salsa di pomodoro, mozzarella fior di latte, melanzane, zucchine, peperoni", price: "€8.00" },
+              { name: "Calabrese", description: "Salsa di pomodoro, mozzarella fior di latte, spianata, 'nduja", price: "€8.00" },
+              { name: "Crudaiola", description: "Mozzarella fior di latte, pomodori freschi, prosciutto crudo, rucola, grana", price: "€8.00" },
+              { name: "4 Stagioni", description: "Salsa di pomodoro, mozzarella fior di latte, prosciutto cotto, funghi, carciofi, olive", price: "€8.00" },
+              { name: "4 Formaggi", description: "Salsa di pomodoro, mozzarella fior di latte, grana, gorgonzola, scamorza", price: "€8.00" },
+              { name: "Capricciosa", description: "Salsa di pomodoro, mozzarella fior di latte, prosciutto cotto, funghi, carciofi, capperi, olive", price: "€8.00" },
+              { name: "Mortazza", description: "Mozzarella fior di latte, mortadella, stracciatella, granella di pistacchio", price: "€9.00" },
+              { name: "Coppa Special", description: "Salsa di pomodoro, mozzarella fior di latte, coppa, stracciatella, tarallo sbriciolato", price: "€10.00" }
+            ]
+          },
+          {
             title: "Pinsa",
             image: null,
             items: [
@@ -465,7 +488,30 @@ export const menuData: MenuData = {
               { name: "Zenit Trio", description: "Selection of cured meats and cheeses", price: "€1.00" },
               { name: "Savory Snacks", description: "", price: "€2.00 / 4.00" }
             ]
-          },          
+          },   
+          {
+            title: "Our Pizzas",
+            image: null,
+            items: [
+              { name: "Margherita", description: "Mozzarella, tomato sauce", price: "€5.50" },
+              { name: "Chips", description: "Tomato sauce, mozzarella, French fries", price: "€6.00" },
+              { name: "Napoli", description: "Tomato sauce, mozzarella, cappers, anchovies", price: "€6.50" },
+              { name: "Americana", description: "Tomato sauce, mozzarella, French fries, hot dog", price: "€6.50" },
+              { name: "Diavola", description: "Tomato sauce, mozzarella, spicy salami", price: "€7.00" },
+              { name: "Tuna & Onion", description: "Tomato sauce, mozzarella, tuna, onion", price: "€7.00" },
+              { name: "Fumé", description: "Tomato sauce, mozzarella, smoked scamorza cheese, bacon", price: "€7.00" },
+              { name: "Ham & Mushroom", description: "Tomato sauce, mozzarella, cooked ham, mushrooms", price: "€7.00" },
+              { name: "Bufala", description: "Tomato sauce, buffalo mozzarella, basil", price: "€7.50" },
+              { name: "Contadina", description: "Tomato sauce, mozzarella, eggplant, zucchini, peppers", price: "€8.00" },
+              { name: "Calabrese", description: "Tomato sauce, mozzarella, spianata spicy salami, 'nduja", price: "€8.00" },
+              { name: "Crudaiola", description: "Mozzarella, fresh tomatoes, cured ham, rocket, Grana cheese", price: "€8.00" },
+              { name: "4 Stagioni", description: "Tomato sauce, mozzarella, cooked ham, mushrooms, artichokes, olives", price: "€8.00" },
+              { name: "4 Formaggi", description: "Tomato sauce, mozzarella, Grana, gorgonzola, scamorza", price: "€8.00" },
+              { name: "Capricciosa", description: "Tomato sauce, mozzarella, cooked ham, mushrooms, artichokes, cappers, olives", price: "€8.00" },
+              { name: "Mortazza", description: "Mozzarella, mortadella, stracciatella cheese, crushed pistachios", price: "€9.00" },
+              { name: "Coppa Special", description: "Tomato sauce, mozzarella, coppa, stracciatella cheese, crushed tarallo", price: "€10.00" }
+            ]
+          },
           {
             title: "Pinsa",
             image: null,
@@ -504,8 +550,5 @@ export const menuData: MenuData = {
         ]
       }
     }
-      
-
-      
 };
   
