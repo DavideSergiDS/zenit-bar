@@ -1,13 +1,15 @@
 import { useState } from "react";
-import { MenuCategory } from "./types";
+import { MenuAllergies, MenuCategory } from "./types";
 import { menuData } from "./menuData";
 import { Analytics } from '@vercel/analytics/react'
 
-function Section({ category }: { category: MenuCategory }) {
+function Section({ category }: { category: unknown }) {
+  
   return (
+    (category as MenuCategory).sections?.length > 0 ? (
     <div className="mb-12">
-      <h2 className="text-3xl font-serif text-center mb-8">{category.title}</h2>
-      {category.sections.map((sec, i) => (
+      <h2 className="text-3xl font-serif text-center mb-8">{(category as MenuCategory).title}</h2>
+      {(category as MenuCategory).sections.map((sec, i) => (
         <div key={i} className="mb-6 mt-12">
           <div className="flex items-center gap-2 mb-2">
             {sec.icon && <sec.icon className="w-5 h-5" />}
@@ -18,7 +20,7 @@ function Section({ category }: { category: MenuCategory }) {
             {sec.items.map((item, j) => (
               <div key={j} className="flex justify-between border-b py-2">
                 <div>
-                  <p className="font-medium">{item.name}</p>
+                  <p className="font-medium">{item.name} {item.allergens && <sup className="text-gray-400">{item.allergens.join(",")}</sup>}</p>
                   <p className="text-sm text-gray-400">{item.description}</p>
                 </div>
                 <p className="font-medium">{item.price}</p>
@@ -27,8 +29,17 @@ function Section({ category }: { category: MenuCategory }) {
           </div>
         </div>
       ))}
-    </div>
-  );
+    </div>) : (<div>
+      <h2 className="text-3xl font-serif text-center mb-8">{(category as MenuAllergies).title}</h2>
+      <p className="text-sm text-gray-400 mb-4">{(category as MenuAllergies).disclaimer}</p>
+      <div className="grid grid-cols-2 gap-4">
+        {(category as MenuAllergies).items.map((item, i) => (
+          <div key={i} className="border p-2">
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>));  
 }
 
 export default function App() {
@@ -53,6 +64,7 @@ export default function App() {
       <Section category={data.bar} />
       <Section category={data.drinks} />
       <Section category={data.food} />
+      <Section category={data.allergens} />
       <Analytics />
     </div>
   );

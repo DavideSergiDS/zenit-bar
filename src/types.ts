@@ -4,6 +4,7 @@ export interface MenuItem {
   name: string;
   description: string;
   price: string;
+  allergens?: string[];
 }
 
 export interface MenuSection {
@@ -22,8 +23,15 @@ export interface MenuCategory {
   sections: MenuSection[];
 }
 
+export interface MenuAllergies {
+  title: string;
+  disclaimer: string;
+  items: string[];
+}
+
 export type MenuData = Record<string, {
   bar: MenuCategory;
   drinks: MenuCategory;
   food: MenuCategory;
+  allergens: MenuAllergies;
 }>;
