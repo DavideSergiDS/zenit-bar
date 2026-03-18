@@ -211,7 +211,7 @@ food: {
               { name: "Patatine Cacio e Pepe", description: "", price: "€6.00", allergens: ["🥛"] },
               { name: "Tagliere Zenit", description: "Mix di salumi e formaggi", price: "€12.00", allergens: ["🥛"] },
               { name: "Aperitivo Zenit", description: "Mix di salumi, formaggi e rosticceria", price: "€20.00", allergens: ["🌾", "🥛"] },
-              { name: "Tris Zenit", description: "Mix di salumi e formaggi", price: "€1.00", allergens: ["🥛"] },
+              { name: "Tris Zenit", description: "", price: "€1.00", allergens: ["🌾", "🌼"] },
               { name: "Rosticceria", description: "", price: "€2.00 / 4.00", allergens: ["🌾", "🥚", "🥛"] },
             ]
           },
@@ -500,7 +500,7 @@ food: {
               { name: "Cacio e Pepe Fries", description: "Cheese & black pepper", price: "€6.00", allergens: ["🥛"] },
               { name: "Zenit Platter", description: "Selection of cured meats and cheeses", price: "€12.00", allergens: ["🥛"] },
               { name: "Zenit Aperitif", description: "Selection of cured meats, cheeses and fried snacks", price: "€20.00", allergens: ["🌾", "🥛"] },
-              { name: "Zenit Trio", description: "Selection of cured meats and cheeses", price: "€1.00", allergens: ["🥛"] },
+              { name: "Zenit Trio", description: "", price: "€1.00", allergens: ["🌾", "🌼"] },
               { name: "Savory Snacks", description: "", price: "€2.00 / 4.00", allergens: ["🌾", "🥚", "🥛"] }
             ]
           },   
