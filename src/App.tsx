@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 function Section({ category }: { category: unknown }) {
   // State to track which subsection index is expanded. Default to 0 (first one open).
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(-1);
   // State for the main category visibility (useful for the Allergens special view)
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
 
@@ -116,7 +116,7 @@ export default function App() {
           <button
             key={l}
             onClick={() => setLang(l)}
-            className={`px-3 py-1 border ${lang === l ? "bg-black text-white" : ""}`}
+            className={`px-3 py-1 border ${lang === l ? "bg-white text-black" : "bg-black text-white" }`}
           >
             {l.toUpperCase()}
           </button>
